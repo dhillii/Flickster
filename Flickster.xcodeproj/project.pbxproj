@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C6080F11E46A80E0069A095 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6080F01E46A80E0069A095 /* MovieCell.swift */; };
 		3CB324871E415E7900E5B1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB324861E415E7900E5B1BC /* AppDelegate.swift */; };
-		3CB324891E415E7900E5B1BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB324881E415E7900E5B1BC /* ViewController.swift */; };
 		3CB3248C1E415E7900E5B1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3248A1E415E7900E5B1BC /* Main.storyboard */; };
 		3CB3248E1E415E7900E5B1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3248D1E415E7900E5B1BC /* Assets.xcassets */; };
 		3CB324911E415E7900E5B1BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3248F1E415E7900E5B1BC /* LaunchScreen.storyboard */; };
+		3CB324991E415EF400E5B1BC /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB324981E415EF400E5B1BC /* MovieViewController.swift */; };
+		B47E57C47BEF418D2693BB2A /* Pods_Flickster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288C4DF1B970194736671449 /* Pods_Flickster.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		288C4DF1B970194736671449 /* Pods_Flickster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flickster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6080F01E46A80E0069A095 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		3CB324831E415E7900E5B1BC /* Flickster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flickster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB324861E415E7900E5B1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3CB324881E415E7900E5B1BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3CB3248B1E415E7900E5B1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CB3248D1E415E7900E5B1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CB324901E415E7900E5B1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CB324921E415E7900E5B1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB324981E415EF400E5B1BC /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		7A888EC0BA24F5AF16A25397 /* Pods-Flickster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flickster/Pods-Flickster.release.xcconfig"; sourceTree = "<group>"; };
+		E12A7BF0CBFC4E962CCEA603 /* Pods-Flickster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flickster/Pods-Flickster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47E57C47BEF418D2693BB2A /* Pods_Flickster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		316BD7F27703098D61A4D3AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E12A7BF0CBFC4E962CCEA603 /* Pods-Flickster.debug.xcconfig */,
+				7A888EC0BA24F5AF16A25397 /* Pods-Flickster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3C6080EF1E46A7CA0069A095 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C6080F01E46A80E0069A095 /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3C6080F21E46A8390069A095 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CB324981E415EF400E5B1BC /* MovieViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		3CB3247A1E415E7900E5B1BC = {
 			isa = PBXGroup;
 			children = (
 				3CB324851E415E7900E5B1BC /* Flickster */,
 				3CB324841E415E7900E5B1BC /* Products */,
+				316BD7F27703098D61A4D3AD /* Pods */,
+				4C40617732BAA5FBE66310AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +88,23 @@
 		3CB324851E415E7900E5B1BC /* Flickster */ = {
 			isa = PBXGroup;
 			children = (
+				3C6080F21E46A8390069A095 /* View Controllers */,
+				3C6080EF1E46A7CA0069A095 /* Views */,
 				3CB324861E415E7900E5B1BC /* AppDelegate.swift */,
-				3CB324881E415E7900E5B1BC /* ViewController.swift */,
 				3CB3248A1E415E7900E5B1BC /* Main.storyboard */,
 				3CB3248D1E415E7900E5B1BC /* Assets.xcassets */,
 				3CB3248F1E415E7900E5B1BC /* LaunchScreen.storyboard */,
 				3CB324921E415E7900E5B1BC /* Info.plist */,
 			);
 			path = Flickster;
+			sourceTree = "<group>";
+		};
+		4C40617732BAA5FBE66310AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				288C4DF1B970194736671449 /* Pods_Flickster.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CB324951E415E7900E5B1BC /* Build configuration list for PBXNativeTarget "Flickster" */;
 			buildPhases = (
+				82256C9D725C75872BF990CF /* [CP] Check Pods Manifest.lock */,
 				3CB3247F1E415E7900E5B1BC /* Sources */,
 				3CB324801E415E7900E5B1BC /* Frameworks */,
 				3CB324811E415E7900E5B1BC /* Resources */,
+				CB79D7D2A00D7F7E1A5958B4 /* [CP] Embed Pods Frameworks */,
+				7562D5C7159CD3EA8C002CB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,13 +178,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7562D5C7159CD3EA8C002CB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flickster/Pods-Flickster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82256C9D725C75872BF990CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB79D7D2A00D7F7E1A5958B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flickster/Pods-Flickster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3CB3247F1E415E7900E5B1BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CB324891E415E7900E5B1BC /* ViewController.swift in Sources */,
 				3CB324871E415E7900E5B1BC /* AppDelegate.swift in Sources */,
+				3CB324991E415EF400E5B1BC /* MovieViewController.swift in Sources */,
+				3C6080F11E46A80E0069A095 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +352,7 @@
 		};
 		3CB324961E415E7900E5B1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12A7BF0CBFC4E962CCEA603 /* Pods-Flickster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6X8456G82G;
@@ -270,6 +366,7 @@
 		};
 		3CB324971E415E7900E5B1BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A888EC0BA24F5AF16A25397 /* Pods-Flickster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6X8456G82G;
@@ -300,6 +397,7 @@
 				3CB324971E415E7900E5B1BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
