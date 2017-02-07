@@ -21,7 +21,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         tableView.dataSource = self
         tableView.delegate = self
-
+        
         
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")!
@@ -33,19 +33,26 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
                     print(dataDictionary)
                     
                     self.movies = dataDictionary["results"] as? [NSDictionary]
+                    
                     self.tableView.reloadData()
+                    
                 }
             }
         }
         task.resume()
+
+   
+        
+
+        let refreshControl = UIRefreshControl()
         
         
+        refreshControl.addTarget(self, action: #selector(refreshControlAction(refreshControl: )), for: UIControlEvents.valueChanged)
+        
+        tableView.insertSubview(refreshControl, at: 0)
         
         
-        
-        
-        
-        // Do any additional setup after loading the view.
+    
     }
 
     override func didReceiveMemoryWarning()
@@ -91,7 +98,40 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
  
     
+    func refreshControlAction(refreshControl: UIRefreshControl)
+    {
+        
+        
+        let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
+        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")!
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        let task: URLSessionDataTask = session.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
+            if let data = data {
+                if let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary {
+                    print(dataDictionary)
+                    
+                    self.movies = dataDictionary["results"] as? [NSDictionary]
+                    
+                    self.tableView.reloadData()
+                    
+                    refreshControl.endRefreshing()
+                }
+            }
+        }
+        task.resume()
 
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
