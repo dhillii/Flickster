@@ -13,6 +13,7 @@
 		3CB3248E1E415E7900E5B1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3248D1E415E7900E5B1BC /* Assets.xcassets */; };
 		3CB324911E415E7900E5B1BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3248F1E415E7900E5B1BC /* LaunchScreen.storyboard */; };
 		3CB324991E415EF400E5B1BC /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB324981E415EF400E5B1BC /* MovieViewController.swift */; };
+		3CBE367C1E4AA6520089F09A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE367B1E4AA6520089F09A /* DetailViewController.swift */; };
 		B47E57C47BEF418D2693BB2A /* Pods_Flickster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288C4DF1B970194736671449 /* Pods_Flickster.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		3CB324901E415E7900E5B1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CB324921E415E7900E5B1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CB324981E415EF400E5B1BC /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		3CBE367B1E4AA6520089F09A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7A888EC0BA24F5AF16A25397 /* Pods-Flickster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flickster/Pods-Flickster.release.xcconfig"; sourceTree = "<group>"; };
 		E12A7BF0CBFC4E962CCEA603 /* Pods-Flickster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flickster/Pods-Flickster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				3CB324981E415EF400E5B1BC /* MovieViewController.swift */,
+				3CBE367B1E4AA6520089F09A /* DetailViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				3CB324871E415E7900E5B1BC /* AppDelegate.swift in Sources */,
 				3CB324991E415EF400E5B1BC /* MovieViewController.swift in Sources */,
 				3C6080F11E46A80E0069A095 /* MovieCell.swift in Sources */,
+				3CBE367C1E4AA6520089F09A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
