@@ -121,7 +121,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        if let url = URL(string: "https://api.themoviedb.org/3/movie/\(Endpoint)?api_key=\(apiKey)")
+        if let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
         {
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
